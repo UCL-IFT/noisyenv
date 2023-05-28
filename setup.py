@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='noisyenv',
     version='0.1.0',
+    url='https://github.com/UCL-IFT/noisyenv',
     author='Raad Khraishi',
     author_email='raad.khraishi@ucl.ac.uk',
     description='Simple noisy environment augmentation for reinforcement learning',
