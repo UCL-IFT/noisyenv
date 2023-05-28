@@ -10,7 +10,7 @@ class RandomMixupObservation(gym.ObservationWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomMixupObservation
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomMixupObservation(env, noise_rate=0.1, factor=0.3)
     """
 
@@ -53,7 +53,7 @@ class RandomDropoutObservation(gym.ObservationWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomDropoutObservation
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomDropoutObservation(env, noise_rate=0.1, p=0.5)
     """
 
@@ -83,7 +83,7 @@ class RandomNormalNoisyObservation(gym.ObservationWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomNormalNoisyObservation
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomNormalNoisyObservation(env, noise_rate=0.1, loc=0.0, scale=0.1)
     """
 
@@ -117,7 +117,7 @@ class RandomUniformNoisyObservation(gym.ObservationWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomUniformNoisyObservation
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomUniformNoisyObservation(env, noise_rate=0.1, low=-0.1, high=0.1)
     """
 
@@ -151,7 +151,7 @@ class RandomUniformScaleObservation(gym.ObservationWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomUniformScaleObservation
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomUniformScaleObservation(env, noise_rate=0.1, low=0.9, high=1.1)
     """
 
@@ -192,7 +192,7 @@ class RandomUniformScaleReward(gym.RewardWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomUniformScaleReward
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomUniformScaleReward(env, noise_rate=0.1, low=0.9, high=1.1)
     """
 
@@ -226,7 +226,7 @@ class RandomUniformNoisyReward(gym.RewardWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomUniformNoisyReward
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomUniformNoisyReward(env, noise_rate=0.1, low=-0.1, high=0.1)
     """
 
@@ -260,7 +260,7 @@ class RandomNormalNoisyReward(gym.RewardWrapper):
     Example:
         >>> import gymnasium as gym
         >>> from noisyenv.wrappers import RandomNormalNoisyReward
-        >>> env = gym.make("HalfCheetah-v2")
+        >>> env = gym.make("CartPole-v1")
         >>> wrapped_env = RandomNormalNoisyReward(env, noise_rate=0.1, scale=0.1)
     """
 
