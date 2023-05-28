@@ -1,12 +1,17 @@
 from setuptools import setup, find_packages
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='noisyenv',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/UCL-IFT/noisyenv',
     author='Raad Khraishi',
     author_email='raad.khraishi@ucl.ac.uk',
     description='Simple noisy environment augmentation for reinforcement learning',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     install_requires=[
         'gymnasium>=0.26.1',

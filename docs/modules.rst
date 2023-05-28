@@ -5,6 +5,10 @@ This package contains a set of generic wrappers designed to augment RL environme
 
 Note that this package has been developed for the new step and reset API introduced in OpenAI Gym v26 and Gymnasium v26. Use the `gymnasium.wrappers.EnvCompatibility` wrapper to update old environments for compatibility.
 
+.. code-block:: bash
+
+   $ pip install noisyenv
+
 .. toctree::
    :maxdepth: 4
 

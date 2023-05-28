@@ -4,6 +4,12 @@ This package contains a set of generic wrappers designed to augment RL environme
 
 Note that this package has been developed for the new step and reset API introduced in [OpenAI Gym v26](https://github.com/openai/gym/releases/tag/0.26.2) and [Gymnasium v26](https://gymnasium.farama.org/content/migration-guide/). Use the `gymnasium.wrappers.EnvCompatibility` wrapper to update old environments for compatibility. 
 
+## Installation
+
+```shell
+pip install noisyenv
+```
+
 ## Usage
 
 ```python
